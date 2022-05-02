@@ -1,13 +1,6 @@
-Version: 1.0
-
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
-
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
-
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+#preffered upskilling area for organization staffs
+ggplot(data=modified)+geom_bar(mapping=aes(x=preffered_upskillingarea,fill=preffered_upskillingarea))+theme(aspect.ratio = 1)+labs(x=NULL,y=NULL)+coord_flip()
+#preffered skills looked for in new employees by the organziations
+ggplot(data=modified)+geom_bar(mapping=aes(x=skills_newemployee,fill=skills_newemployee))+theme(aspect.ratio = 1)+labs(x=NULL,y=NULL)+coord_flip()
+#state wise depiction of preffered skills
+ggplot(data=modified)+geom_bar(mapping=aes(x=state,fill=preffered_upskillingarea),position="fill")+theme(axis.text.x = element_text(angle=90))
