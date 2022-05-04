@@ -4,3 +4,5 @@ ggplot(data=modified)+geom_bar(mapping=aes(x=preffered_upskillingarea,fill=preff
 ggplot(data=modified)+geom_bar(mapping=aes(x=skills_newemployee,fill=skills_newemployee))+theme(aspect.ratio = 1)+labs(x=NULL,y=NULL)+coord_flip()
 #state wise depiction of preffered skills
 ggplot(data=modified)+geom_bar(mapping=aes(x=state,fill=preffered_upskillingarea),position="fill")+theme(axis.text.x = element_text(angle=90))
+#state wise demand for skills in potential employees
+ggplot(data=modified)+geom_bar(mapping=aes(x=state,fill=skills_newemployeee),position="fill")+theme(axis.text.x = element_text(angle=90))
